@@ -56,5 +56,4 @@ data_3 <- data_2 %>%
         group_by(subject, activity) %>%
         summarise_all(funs(mean))
 head(data_3)
-write.csv(data_3, "Getting_and_cleaning_data_project_1.csv", rownames= F, sep = ",")
-
+write.table(data_3, "Getting_and_cleaning_data_project_1.txt", rownames= F)
